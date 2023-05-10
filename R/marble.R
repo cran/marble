@@ -6,7 +6,7 @@ NULL
 #' @param X the matrix of predictors (genetic factors). Each row should be an observation vector. 
 #' @param Y the continuous response variable. 
 #' @param E a matrix of environmental factors. E will be centered. The interaction terms between X (genetic factors) and E will be automatically created and included in the model.
-#' @param clin a matrix of clinical variables. Clinical variables are not subject to penalty. Clinical variables will be centered and a column of 1 will be added to the Clinical matrix as the intercept.
+#' @param clin a matrix of clinical variables. Clinical variables are not subject to penalize. Clinical variables will be centered and a column of 1 will be added to the Clinical matrix as the intercept.
 #' @param max.steps the number of MCMC iterations.
 #' @param robust logical flag. If TRUE, robust methods will be used.
 #' @param sparse logical flag. If TRUE, spike-and-slab priors will be used to shrink coefficients of irrelevant covariates to zero exactly.
@@ -33,7 +33,7 @@ NULL
 #'
 #' Here, a rank list of the main and interaction effects is provided. For method incorporating spike-and-slab priors,  
 #' the inclusion probability is used to indicate the importance of predictors. 
-#' We use a binary indicator \eqn{\phi} to denote that the membership of the non-spike distribution. 
+#' We use a binary indicator \eqn{\phi} to denote the membership of the non-spike distribution. 
 #' Take the main effect of the \eqn{j}th genetic factor, \eqn{X_{j}}, as an example. 
 #' Suppose we have collected H posterior samples from MCMC after burn-ins. The \eqn{j}th G factor is included 
 #' in the marginal G\eqn{\times}E model at the \eqn{j}th MCMC iteration if the corresponding indicator is 1, i.e., \eqn{\phi_j^{(h)} = 1}. 

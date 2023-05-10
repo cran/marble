@@ -2,8 +2,8 @@ Package: marble
 Type: Package
 Title: Robust Marginal Bayesian Variable Selection for Gene-Environment
         Interactions
-Version: 0.0.1
-Date: 2023-04-06
+Version: 0.0.2
+Date: 2023-05-09
 Authors@R: c( person("Xi", "Lu", role = c("aut", "cre"),
                       email = "xilu@ksu.edu"),
               person("Cen", "Wu", role = "aut"))
@@ -18,8 +18,8 @@ Imports: Rcpp, stats
 RoxygenNote: 7.2.3
 NeedsCompilation: yes
 Repository: CRAN
-Packaged: 2023-04-28 20:24:37 UTC; grimf
+Packaged: 2023-05-10 19:03:12 UTC; grimf
 Author: Xi Lu [aut, cre],
   Cen Wu [aut]
 Maintainer: Xi Lu <xilu@ksu.edu>
-Date/Publication: 2023-05-02 08:20:05 UTC
+Date/Publication: 2023-05-10 19:30:02 UTC
