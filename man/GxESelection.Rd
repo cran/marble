@@ -21,7 +21,7 @@ Variable selection for a marble object
 }
 \details{
 For class `Sparse',  the inclusion probability is used to indicate the importance of predictors. 
-Here we use a binary indicator \eqn{\phi} to denote the membership of the non-spike distribution. 
+Here we use a binary indicator \eqn{\phi} to denote that the membership of the non-spike distribution. 
 Take the main effect of the \eqn{j}th genetic factor, \eqn{X_{j}}, as an example. 
 Suppose we have collected H posterior samples from MCMC after burn-ins. The \eqn{j}th G factor is included 
 in the marginal G\eqn{\times}E model at the \eqn{j}th MCMC iteration if the corresponding indicator is 1, i.e., \eqn{\phi_j^{(h)} = 1}. 
